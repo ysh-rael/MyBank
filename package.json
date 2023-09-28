@@ -1,0 +1,34 @@
+{
+  "name": "my-bank",
+  "version": "1.0.0",
+  "description": "Sistema rústico bancário de transação monetária entre loja e cliente",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jasmine",
+    "dev": "nodemon index.js",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ysh-rael/my-bank.git"
+  },
+  "author": "Ysh-rael",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ysh-rael/my-bank/issues"
+  },
+  "homepage": "https://github.com/ysh-rael/my-bank#readme",
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "eslint": "^8.50.0",
+    "eslint-plugin-eslint-plugin": "^5.1.1",
+    "jasmine": "^5.1.0",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.3",
+    "uuid": "^9.0.1"
+  }
+}

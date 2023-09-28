@@ -1,0 +1,5 @@
+# Arquivo .editorconfig
+
+# Use LF para quebras de linha em todos os arquivos
+[*]
+end_of_line = lf
