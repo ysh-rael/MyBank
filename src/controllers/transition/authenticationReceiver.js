@@ -13,7 +13,7 @@ module.exports = function () {
 
         const Model = require(`../../models/${req.body.receiver.type}`);
         Model.find(filter).then(result => {
-            console.log('result.length: ' + result.length);
+            
             if (result.length < 1) return res.status(404).send('Remetente Não encontrado');
             if (result.length > 1) return res.status(202).send('Mais de um Remetente encontrado. Por motivos de segunça, nenhum será retornado e a transação será abortada.');
 
@@ -26,7 +26,6 @@ module.exports = function () {
                     value: result.value,
                 };
 
-            console.log(result);
             next();
         }).catch(result => {
             console.log('Erro autenticação');

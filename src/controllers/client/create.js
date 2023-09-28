@@ -8,8 +8,6 @@ module.exports = function () {
         const { type, fullName, cpf, email, value } = req.body;
         const _id = new mongoose.Types.ObjectId();
 
-        console.log('_id: ', _id);
-
         const result = await Model.create({
             _id,
             type,

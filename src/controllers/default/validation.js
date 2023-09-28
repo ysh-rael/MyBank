@@ -13,10 +13,6 @@ module.exports = function (camposObrigatórios) {
             if (test === -1) return res.status(400).send(`Espera-se que o corpo da solicitação contenha um atributo com chave ${camposObrigatórios[campo]}`);
         }
 
-        console.log('req.body: ');
-        console.log(req.body);
-        console.log('\n');
-
         next();
     };
 };

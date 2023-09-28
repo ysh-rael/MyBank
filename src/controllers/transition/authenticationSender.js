@@ -13,12 +13,14 @@ module.exports = function () {
 
         const Model = require(`../../models/${req.body.sender.type}`);
         Model.find(filter).then(result => {
-            console.log('result.length: ' + result.length);
+
             if (result.length < 1) return res.status(404).send('Emissor Não encontrado');
             if (result.length > 1) return res.status(202).send('Mais de um Emissor encontrado. Por motivos de segunça, nenhum será retornado e a transação será abortada.');
 
             result = result[0];
+            
             if (result.value < req.body.value) return res.status(401).send('Sem Saldo suficiente. Transação abortada.');
+
             req.transition = {};
             req.transition.sender = {
                 _id: result._id,

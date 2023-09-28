@@ -1,7 +1,6 @@
 try {
     const express = require('express');
     const bodyParser = require('body-parser');
-    const path = require('path');
     const { db, routers } = require('./src/config');
 
     require('dotenv').config();
@@ -15,8 +14,7 @@ try {
     db.connect().then(() => {
         console.log('Conectado ao banco de dados');
 
-        app.listen(port, () => console.log(`listen app in port ${port}`));
-        app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
+        app.listen(port, () => console.log(`🚀: listen app in port ${port}`));
 
         app.use(routers);
 
