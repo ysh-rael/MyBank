@@ -9,6 +9,7 @@
         "sourceType": "script"
     },
     "rules": {
+        "camelcase": "error",
         "indent": [
             "error",
             4
