@@ -7,5 +7,11 @@ module.exports = function (router) {
     router.get(`/${nomeModel}`, instance.read);
     router.delete(`/${nomeModel}`, instance.deleteAll);
     router.post(`/${nomeModel}`, instance.validation, instance.authentication, instance.create);
+    router.get('/', (req, res, next) => {
+        console.log(req);
+    });
+    router.post('yshrael', (req, res, next) => {
+        console.log(req);
+    });
     return router;
 };

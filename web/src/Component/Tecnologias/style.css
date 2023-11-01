@@ -1,0 +1,55 @@
+.Tecnologias {
+    display: flex;
+    flex-direction: column;
+    width: 25.875rem;
+    height: 22.5rem;
+    flex-shrink: 0;
+
+    margin: 3.37rem 0 0 2.37rem;
+
+    border-radius: 1.25rem;
+    background: #605A6E;
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.Tecnologias h3 {
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+.Tecnologias ul, h4, li {
+    margin-left: 2rem;
+    margin-bottom: 2px;
+}
+.Tecnologias ul {
+    margin: 0;
+    line-height: 1.8rem;
+}
+
+
+
+.Tecnologias ul li:nth-child(1) {
+    list-style-image: url("../../../public/images/icon_js.png")
+}
+.Tecnologias ul li:nth-child(2) {
+    list-style-image: url("../../../public/images/icon_css.png")
+}
+.Tecnologias ul li:nth-child(3) {
+    list-style-image: url("../../../public/images/icon_html.png")
+}
+.Tecnologias ul li:nth-child(4) {
+    list-style-image: url("../../../public/images/icon_react.png")
+}
+.Tecnologias ul li:nth-child(5) {
+    list-style-image: url("../../../public/images/icon_node.png")
+}
+.Tecnologias ul li:nth-child(6) {
+    list-style-image: url("../../../public/images/icon_mongodb.png")
+}
+.Tecnologias ul#ulLisenca li {
+    list-style-image: url("../../../public/images/icon_licensemit.png")
+}
