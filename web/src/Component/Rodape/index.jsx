@@ -1,4 +1,5 @@
 import './style.css'
+import React from 'react'
 
 function Icone({ children }) {
     return <div className='Icone'>
@@ -10,9 +11,9 @@ function Rodape() {
     return <footer className='footer'>
         <div className='boxIcone'>
 
-            <Icone> <a href='#' target='_blank'> <img alt='Email' src="../../../public/images/icon_email.png" />        </a></Icone>
-            <Icone> <a href='#' target='_blank'> <img alt='Github' src="../../../public/images/icon_github.png" />      </a></Icone>
-            <Icone> <a href='#' target='_blank'> <img alt='Linkedin' src="../../../public/images/icon_linkedin.png" />  </a></Icone>
+            <Icone> <a className="iconEmail" href='#' target='_blank'>  </a></Icone>
+            <Icone> <a className="iconGithub" href='#' target='_blank'>  </a></Icone>
+            <Icone> <a className="iconLinkedin" href='#' target='_blank'>  </a></Icone>
 
         </div>
         <span>Yshrael Pimentel</span>

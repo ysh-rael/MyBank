@@ -3,7 +3,7 @@ import './style.css'
 function Aviso() {
     return <div className='Aviso'>
         <span>
-            ESSA É UMA APLICAÇÃO SEM FINS LUCRATIVOS COM O INTUITO DE APRENDIZADO E TESTE
+            Essa é uma aplicação sem fins lucrativos com o intuito de aprendizado e teste. As informações são atualizadas a cada 30min.
         </span> <br/>
 
         <span>

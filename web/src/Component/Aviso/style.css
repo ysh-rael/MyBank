@@ -25,13 +25,12 @@
 }
 
 .Aviso .AvisoDestaque1 {
-    color: rgba(212, 11, 11, 0.827);
+    color: rgb(206, 241, 6);
     font-weight: 600;
-    text-shadow: 1px 1px black;
 }
 
 .Aviso .AvisoDestaque2 {
-    color: rgba(167, 242, 6, 0.827);
+    color: rgba(242, 152, 6, 0.827);
     font-weight: 600;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.468);
 }

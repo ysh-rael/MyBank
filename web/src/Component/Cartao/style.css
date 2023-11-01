@@ -1,0 +1,39 @@
+.Cartao {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: .31rem;
+    
+    min-width: 17.5625rem;
+    max-width: 20rem;
+    min-height: 5.125rem;
+    justify-content: center;
+    align-items: start;
+    flex-shrink: 0;
+
+    border-radius: 1.25rem;
+    background: #dedede;
+
+    padding: 1.13rem 2rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.300);
+}
+.Cartao:hover {
+    transition-duration: 300ms;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.500);
+}
+
+.Cartao div {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: start;
+    gap: .94rem;
+}
+.Cartao label {
+    font-weight: 600;
+}
+.Cartao span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

@@ -18,9 +18,9 @@ function alterarModoModal(bol) {
     }
 }
 
-function navegar(href) { window.location.href = href; }
 
 function Header() {
+    function navegar(href) { window.location.href = href; }
     window.onload = () => {
         const bttns = Array.from(document.getElementsByTagName('button'))
         if (bttns)
@@ -58,7 +58,12 @@ function Header() {
 
     return <header id='header'>
 
-        <Logo onClick={() => navegar('#Banner')} />
+        <Logo onClick={() => {
+            navegar('#Banner')
+            const bttns = Array.from(document.getElementsByTagName('button'))
+            console.log(bttns.length)
+            bttns.forEach(esse => esse.classList.remove('bttnAtivo'))
+        }} />
 
         <nav>
             <Button onClick={() => navegar('#TituloConsumidor')}>  <GiTakeMyMoney /> Consumidor </Button>
